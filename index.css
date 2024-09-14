@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F8ED;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 0 16px 32px;
+}
+
+.title {
+    text-align: center;
+    font-size: 64px;
+    color: #48A300;
+}
+
+.title span {
+    color: #61481C;
+}
+
+.app-container {
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 32px 48px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .subtitle{
+
+} */
+.ri-sun-fill {
+    vertical-align: middle;
+    margin-left: 16px;
+    color: yellow;
+    animation: sun 2s linear infinite;
+}
+
+@keyframes sun {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.progress-label {
+    margin-bottom: 20px;
+    color: #858585;
+    font-size: 14px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: #E9F2E2;
+    border-radius: 15px;
+}
+
+.progress-value {
+    width: 0%;
+    background-color: #47A200;
+    height: 100%;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 10px;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+    /* padding-left: 20px; */
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.progress-value span {
+    padding-left: 20px;
+    min-width: max-content;
+}
+
+.error-label {
+    color: #FF5151;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.show-error .error-label {
+    display: block;
+}
+
+.goal-container {
+    margin-top: 46px;
+    border: 1px solid #E2E2E2;
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #FFFFFF;
+    margin-bottom: 46px;
+}
+
+.Completed .custon-checkbox {
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.Completed .ri-check-line {
+    display: block;
+}
+
+.custon-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-check-line {
+    color: whitesmoke;
+    display: none;
+}
+
+.goal-input {
+    align-self: stretch;
+    border: none;
+    outline: none;
+    padding-left: 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    /* flex-grow: 1; */
+    width: 100%;
+    background-color: transparent;
+}
+
+.Completed .goal-input {
+    color: #47A200;
+  text-decoration: underline;
+}
+
+.goal-input::placeholder {
+    color: #D9D9D9;
+}
+
+.quote {
+    font-weight: 500px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.made-with {
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    color: #858585;
+    margin-top: 64px;
+}
+
+.ri-heart-fill {
+    color: red;
+}
+
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .app-container {
+        padding: 16px 32px;
+    }
+
+    .goal-container {
+        height: 24px;
+        border-radius: 12px;
+
+    }
+
+    .custon-checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .goal-input {
+        width: 100%;
+        height: 100%;
+    }
+
+    .made-with {
+        margin-top: 32px;
+    }
+
+    .progress-bar {
+        height: 24px;
+    }
+}
